@@ -78,16 +78,16 @@
 #define CONSOLE_OUTPUT true
 
 /*CONSTANT VALUES*/
-const int colourFood[3] = {255, 0, 0}; //Red
-const int colourHead[3] = {55, 255, 55}; //Green
-const int colourTail[3] = {55, 55, 255}; //Blue
-const int colourBody[3] = {110, 55, 255}; //Purple
-const int colourBlock[3] = {125, 55, 55}; //Brown
-const int colourTiles[3] = {0, 45, 20}; //Dark Green
-const int colourBackground[3] = {25, 25, 25}; //Black
-const int colourTextGameOver[3] = {230, 230, 230}; //White
-const int colourTextLabel[3] = {255, 0, 0}; //Red
-const int colourTextData[3] = {55, 55, 255}; //Blue
+const int colourFood[3] = {255, 0, 0}; //Bright Red
+const int colourHead[3] = {215, 95, 95}; //Red
+const int colourBody[3] = {135, 215, 255}; //Blue
+const int colourTail[3] = {255, 215, 135}; //Yellow
+const int colourBlock[3] = {234, 234, 234}; //White
+const int colourTiles[3] = {38, 38, 38}; //Dark Grey
+const int colourBackground[3] = {48, 48, 48}; //Light Grey
+const int colourTextGameOver[3] = {234, 234, 234}; //White
+const int colourTextLabel[3] = {215, 95, 95}; //Red
+const int colourTextData[3] = {135, 215, 255}; //Blue
 
 /*ENUMERATIONS FOR MORE READABLE CODE*/
 enum direction {Up, Down, Left, Right}; //Movement directions
