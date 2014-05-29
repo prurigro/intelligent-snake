@@ -34,6 +34,8 @@ Intelligent Snake is a simple clone of the famous **snake**-style games. It's me
 * `make windows`: Build Intelligent Snake for Windows and copy required files to ./windows-bin/
 * `make clean`: Remove build directories
 
+**Note**: The Makefile assumes mingw32 is installed to /usr/x86_64-w64-mingw32/, and you should edit MINGW and MINGWPATH if your system installs it elsewhere.
+
 ## Commands ##
 
 Usage: `./isnake [options]`
@@ -53,7 +55,7 @@ Usage: `./isnake [options]`
   * **FPS Keys**: `w`, `a`, `s` and `d`
   * **Vim Keys**: `k`, `h`, `j` and `l`
   * **Arrow Keys**: `up`, `left`, `down` and `right`
-* **Quit**: `Escape` and `Q`
+* **Quit**: `Escape` and `q`
 * **Restart** (after death): `Space` and `Return`
 
 ## Credits ##
