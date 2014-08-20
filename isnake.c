@@ -131,7 +131,7 @@ int main(int argc, char* args[])
     //INITIALIZE SDL
     if (SDL_Init(SDL_INIT_VIDEO | SDL_INIT_TIMER) != 0)
     {
-        fprintf(stderr, "\nUnable to initialize SDL:  %s\n", SDL_GetError());
+        fprintf(stderr, "\nUnable to initialize SDL: %s\n", SDL_GetError());
         exit(EXIT_FAILURE);
     }
     atexit(SDL_Quit);
@@ -139,7 +139,7 @@ int main(int argc, char* args[])
     //INITIALIZE SDL_ttf
     if (TTF_Init() != 0)
     {
-        fprintf(stderr, "\nUnable to initialize SDL:  %s\n", SDL_GetError());
+        fprintf(stderr, "\nUnable to initialize SDL: %s\n", SDL_GetError());
         exit(EXIT_FAILURE);
     }
     atexit(TTF_Quit);
@@ -147,7 +147,7 @@ int main(int argc, char* args[])
     //INITIALIZE THE MAIN SURFACE
     if ((screen = SDL_SetVideoMode((TILEWIDTH * gameParameters[TilesWide]), (TILEHEIGHT * gameParameters[TilesHigh]) + 35, 32, SDL_HWSURFACE | SDL_DOUBLEBUF | SDL_ANYFORMAT)) == NULL)
     {
-        fprintf(stderr, "\nUnable to initialize SDL:  %s\n", SDL_GetError());
+        fprintf(stderr, "\nUnable to initialize SDL: %s\n", SDL_GetError());
         exit(EXIT_FAILURE);
     }
 
