@@ -47,6 +47,7 @@ Usage: `./isnake [options]`
 * `./isnake -b [blocks]`: Set the number of blocks: between [0] and [40] (DEFAULT: [20])
 * `./isnake -l [length]`: Set the snake's starting length: between [3] and [35] (DEFAULT: [3])
 * `./isnake -s [speed]`: Set the snake's starting speed: between [1] and [9] (DEFAULT: [1])
+* `./isnake -2`: Double the size the game renders at
 * `./isnake -h`: Display help information
 
 ## Controls ##
