@@ -90,8 +90,8 @@ const int colourTextLabel[3] = { 215, 95, 95 }; // Red
 const int colourTextData[3] = { 135, 215, 255 }; // Blue
 
 // ENUMERATIONS FOR MORE READABLE CODE
-enum direction {Up, Down, Left, Right}; // Movement directions
-enum gameParams {QuitGame, TilesHigh, TilesWide, NPCCount, SnakeSpeed, SnakeLength, SnakeDirection, SnakeScore};
+enum direction { Up, Down, Left, Right }; // Movement directions
+enum gameParams { QuitGame, TilesHigh, TilesWide, NPCCount, SnakeSpeed, SnakeLength, SnakeDirection, SnakeScore };
 
 // GAME FUNCTIONS
 void gameLoop(SDL_Surface* screen, SDL_Rect** ppTiles, int** ppSprites, int (*gameParameters)[8], SDL_Event* event);
@@ -222,17 +222,17 @@ int main(int argc, char* args[]) {
 
 // GAME LOOP
 void gameLoop(SDL_Surface* screen, SDL_Rect** ppTiles, int** ppSprites, int (*gameParameters)[8], SDL_Event* event) {
-    SDL_Colour SDL_ColourBackground = {colourBackground[0], colourBackground[1], colourBackground[2]};
-    SDL_Colour SDL_ColourTextLabel = {colourTextLabel[0], colourTextLabel[1], colourTextLabel[2]};
-    SDL_Colour SDL_ColourTextData = {colourTextData[0], colourTextData[1], colourTextData[2]};
-    SDL_Colour SDL_ColourTextGameOver = {colourTextGameOver[0], colourTextGameOver[1], colourTextGameOver[2]};
-    int scoreLabelPosition[2] = {15, (TILEHEIGHT * (*gameParameters)[TilesHigh]) + 4};
-    int scoreDataPosition[2] = {95, (TILEHEIGHT * (*gameParameters)[TilesHigh]) + 4};
-    int speedLabelPosition[2] = {(TILEWIDTH * (*gameParameters)[TilesWide]) - 100, (TILEHEIGHT * (*gameParameters)[TilesHigh]) + 4};
-    int speedDataPosition[2] = {(TILEWIDTH * (*gameParameters)[TilesWide]) - 25, (TILEHEIGHT * (*gameParameters)[TilesHigh]) + 4};
-    int gameOverMsgPosition[5] = {(TILEWIDTH * ((*gameParameters)[TilesWide] / 2)) - 147, (TILEWIDTH * ((*gameParameters)[TilesWide] / 2)) - 50, (TILEWIDTH * ((*gameParameters)[TilesWide] / 2)) + 61, (TILEWIDTH * ((*gameParameters)[TilesWide] / 2)) + 82, (TILEHEIGHT * (*gameParameters)[TilesHigh]) + 9};
-    char* gameOverMsg[4] = {"GAME OVER", "SPACE to RESTART", " or ", "ESC to QUIT"};
-    char tempString[2][3] = {"-1", "-1"};
+    SDL_Colour SDL_ColourBackground = { colourBackground[0], colourBackground[1], colourBackground[2] };
+    SDL_Colour SDL_ColourTextLabel = { colourTextLabel[0], colourTextLabel[1], colourTextLabel[2] };
+    SDL_Colour SDL_ColourTextData = { colourTextData[0], colourTextData[1], colourTextData[2] };
+    SDL_Colour SDL_ColourTextGameOver = { colourTextGameOver[0], colourTextGameOver[1], colourTextGameOver[2] };
+    int scoreLabelPosition[2] = { 15, (TILEHEIGHT * (*gameParameters)[TilesHigh]) + 4 };
+    int scoreDataPosition[2] = { 95, (TILEHEIGHT * (*gameParameters)[TilesHigh]) + 4 };
+    int speedLabelPosition[2] = { (TILEWIDTH * (*gameParameters)[TilesWide]) - 100, (TILEHEIGHT * (*gameParameters)[TilesHigh]) + 4 };
+    int speedDataPosition[2] = { (TILEWIDTH * (*gameParameters)[TilesWide]) - 25, (TILEHEIGHT * (*gameParameters)[TilesHigh]) + 4 };
+    int gameOverMsgPosition[5] = { (TILEWIDTH * ((*gameParameters)[TilesWide] / 2)) - 147, (TILEWIDTH * ((*gameParameters)[TilesWide] / 2)) - 50, (TILEWIDTH * ((*gameParameters)[TilesWide] / 2)) + 61, (TILEWIDTH * ((*gameParameters)[TilesWide] / 2)) + 82, (TILEHEIGHT * (*gameParameters)[TilesHigh]) + 9 };
+    char* gameOverMsg[4] = { "GAME OVER", "SPACE to RESTART", " or ", "ESC to QUIT" };
+    char tempString[2][3] = { "-1", "-1" };
 
     // LOAD BLOCKS AND FOOD
     loadNPCs(screen, ppTiles, ppSprites, gameParameters);
@@ -637,8 +637,8 @@ void randomLocation(int** ppSprites, int (*gameParameters)[8], int* location[2])
 
 // DRAW TEXT WHEN REQUIRED
 void drawText(SDL_Surface* screen, char* string, int size, int x, int y, SDL_Colour colour) {
-    SDL_Colour SDL_ColourBackground = {colourBackground[0], colourBackground[1], colourBackground[2]};
-    SDL_Rect coordinates = {x, y};
+    SDL_Colour SDL_ColourBackground = { colourBackground[0], colourBackground[1], colourBackground[2] };
+    SDL_Rect coordinates = { x, y };
     SDL_Surface *newString = NULL;
     TTF_Font *font;
 
