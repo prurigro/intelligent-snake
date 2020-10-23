@@ -2,7 +2,7 @@
 
 Intelligent Snake is a simple clone of the famous **snake**-style games. It's meant both as a fun time waster as well as a simple working SDL program to learn from and use as a reference.
 
-![Intelligent Snake](/screenshot.png)
+![Intelligent Snake](screenshot.png)
 
 ## Compile ##
 
